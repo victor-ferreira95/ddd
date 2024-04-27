@@ -2,11 +2,15 @@
 // ORM
 // ter consistências dos dados, refletir ao valo atual do elemento
 // sempre se autoavaliar
+// Entidade focada em negocio
+// NEGOCIO X PERSISTÊNCIA
 
-class Costumer {
+import { Address } from './address'
+
+export class Costumer {
   _id: string
   _name: string
-  _address: string = ''
+  _address!: Address
   _active: boolean = false
 
   constructor(_id: string, _name: string) {
@@ -51,7 +55,7 @@ class Costumer {
   }
 
   activate() {
-    if (this._address === '') {
+    if (this._address !== undefined) {
       throw new Error('Address is mandatory to activate a customer')
     }
     this._active = true
@@ -59,5 +63,10 @@ class Costumer {
 
   deactivate() {
     this._active = false
+  }
+
+  // eslint-disable-next-line accessor-pairs
+  set address(address: Address) {
+    this._address = address
   }
 }
