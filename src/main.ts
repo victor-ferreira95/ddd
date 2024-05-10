@@ -9,9 +9,9 @@ costumer.Address = address
 costumer.activate()
 // ID
 
-const item1 = new OrderItem('1', 'item 1', 10, 1)
-const item2 = new OrderItem('2', 'item 2', 8, 2)
-const item3 = new OrderItem('3', 'item 3', 15, 7)
+const item1 = new OrderItem('1', 'item 1', 10, 'p1', 1)
+const item2 = new OrderItem('2', 'item 2', 8, 'p2', 2)
+const item3 = new OrderItem('3', 'item 3', 15, 'p3', 7)
 const order = new Order('1', '1', [item1, item2, item3])
 // Objeto - Entidade
 

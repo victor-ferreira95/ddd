@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "pnpm tsc --noEmit && jest",
     "lint": "eslint src --ext .ts --fix",
     "dev": "ts-node-dev --inspect --transpile-only --poll --ignore-watch node_modules --respawn src/main.ts"
   },
