@@ -1,7 +1,7 @@
-import Address from './entity/address'
-import Costumer from './entity/costumer'
-import Order from './entity/order'
-import OrderItem from './entity/order_item'
+import Address from './domain/entity/address'
+import Costumer from './domain/entity/costumer'
+import Order from './domain/entity/order'
+import OrderItem from './domain/entity/order_item'
 
 const costumer = new Costumer('1', 'victor ferreira')
 const address = new Address('rua minas gerais', 2003, '61944-460', 'Maranguape')

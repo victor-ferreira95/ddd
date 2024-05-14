@@ -1,6 +1,6 @@
-import Customer from '../costumer'
-import Order from '../order'
-import OrderItem from '../order_item'
+import Customer from '../entity/costumer'
+import Order from '../entity/order'
+import OrderItem from '../entity/order_item'
 import { v4 as uuid } from 'uuid'
 
 export default class OrderService {
