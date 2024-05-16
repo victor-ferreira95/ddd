@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Address from './address'
-import Customer from './costumer'
+import Customer from './customer'
 
-describe('Costumer unit test', () => {
+describe('Customer unit test', () => {
   it('should throw error when id is empty', () => {
     expect(() => {
       const customer = new Customer('', 'John')
