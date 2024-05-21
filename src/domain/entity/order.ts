@@ -22,9 +22,14 @@ export default class Order {
     return this._customerId
   }
 
-  //   get items(): OrderItem[] {
-  //     return this._items
-  //   }
+  get items(): OrderItem[] {
+    return this._items
+  }
+
+  changeItems(items: OrderItem[]): void {
+    this._items = items
+    this.validate()
+  }
 
   validate(): boolean {
     if (this._id.length === 0) {
