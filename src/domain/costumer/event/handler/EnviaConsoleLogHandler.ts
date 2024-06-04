@@ -1,6 +1,6 @@
-import EventHandlerInterface from '../../@shared/event-handler.interface'
 import CostumerChangedAddressEvent from '../costumer-changed-address.event'
-import Costumer from '../../../entity/customer'
+import Costumer from '../../entity/customer'
+import EventHandlerInterface from '../../../@shared/event/event-handler.interface'
 
 export class EnviaConsoleLogHandler
   implements EventHandlerInterface<CostumerChangedAddressEvent>
